@@ -1,0 +1,110 @@
+body {
+    user-select: none;
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkboard {
+    border-top: 10px solid tan;
+    border-right: 10px solid tan;
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: tan;
+}
+
+#numbers {
+    width: 30px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 35px;
+    text-indent: 5px;
+}
+
+#letters {
+    width: 640px;
+    height: 40px;
+    display: flex;
+    margin-left: 30px;
+    font-size: 35px;
+    justify-content: space-around;
+}
+
+#squares {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+
+}
+
+#squares>div {
+    width: 12.5%;
+    height: 12.5%;
+}
+
+.brown {
+    background-color: rgb(129, 95, 7);
+}
+
+.beige {
+    background-color: rgb(230, 230, 196);
+}
+
+.checker {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 4px 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    line-height: 70px;
+}
+
+div[id^="w"] {
+    color: blue;
+    background-color: white;
+    box-shadow: 0px 6px 0px 0px rgb(211, 207, 207);
+}
+
+div[id^="b"] {
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0px 6px 0px 0px black;
+    color: yellow;
+}
+
+.hold {
+    border: 10px double red;
+    line-height: 45px;
+}
+
+.movable {
+    border: 5px dashed rgb(48, 231, 48);
+    line-height: 60px;
+}
+
+.green {
+    background-color: green;
+}
+
+.invisible {
+    display: none;
+}
+
+@keyframes coronation {
+    0% {
+        font-size: 0px;
+    }
+
+    50% {
+        font-size: 20px;
+    }
+}
